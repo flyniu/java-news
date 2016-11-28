@@ -1,0 +1,21 @@
+create table nav(
+nav_id varchar(36) primary key,
+nav_name varchar(50),
+nav_feight int default 999
+)default charset=utf8;
+
+
+create table artical(
+artical_id varchar(36) primary key comment "ÎÄÕÂµÄID",
+artical_title varchar(300) not null,
+artical_date varchar(26) not null,
+artical_content longtext,
+nav_id varchar(36) not null
+)default charset=utf8;
+
+create table manager(
+manager_id varchar(18) primary key,
+manager_name varchar(20) not null,
+manager_password varchar(50)
+)default charset=utf8;
+

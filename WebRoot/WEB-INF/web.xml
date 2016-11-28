@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <filter>
+    <filter-name>filter</filter-name>
+    <filter-class>com.filter.filter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>filter</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertManager</servlet-name>
+    <servlet-class>com.servlet.insertManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>com.servlet.edit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>del</servlet-name>
+    <servlet-class>com.servlet.del</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>logservlet</servlet-name>
+    <servlet-class>com.servlet.logservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertnav</servlet-name>
+    <servlet-class>com.servlet.insertnav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>edit_nav</servlet-name>
+    <servlet-class>com.servlet.edit_nav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Insertartical</servlet-name>
+    <servlet-class>com.servlet.Insertartical</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>editartical</servlet-name>
+    <servlet-class>com.servlet.editartical</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indexservlet</servlet-name>
+    <servlet-class>com.servlet.indexservlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>insertManager</servlet-name>
+    <url-pattern>/admin/insertManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/admin/edit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>del</servlet-name>
+    <url-pattern>/admin/del</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logservlet</servlet-name>
+    <url-pattern>/logservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertnav</servlet-name>
+    <url-pattern>/admin/insertnav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>edit_nav</servlet-name>
+    <url-pattern>/admin/edit_nav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Insertartical</servlet-name>
+    <url-pattern>/admin/Insertartical</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editartical</servlet-name>
+    <url-pattern>/admin/editartical</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indexservlet</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
